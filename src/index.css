@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./bg-intro-desktop.png');
+    background-color: #ff7a7a;
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.intro-title {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 50vw;
+    padding: 0 0 0 150px;
+}
+
+.intro-title-h1 {
+    display: flex;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.intro-subtitle-p {
+    margin-top: 30px;
+    line-break: strict;
+}
+
+#break2::before {
+    content: "\a";
+    white-space: pre;
+}
+
+#break3::before {
+    content: "\a";
+    white-space: pre;
+}
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+.trial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d54a3;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    width: 600px;
+    height: 60px;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 30px;
+    box-shadow: 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-class {
+    width: 90%;
+}
+
+.inputs-box {
+    display: flex;
+    height: 60px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 30px 0 0 0;
+    font-size: 16px;
+    color: black;
+    padding-left: 20px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.inputs-box:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.claim-button {
+    display: flex;
+    background-color: #38cc8c;
+    margin: 20px 0 10px 0;
+    height: 60px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    transition-duration: 0.4s;
+}
+
+.claim-button:hover {
+    background-color: #6055a5;
+    color: #38cc8c;
+}
+
+.terms-of-use {
+    color: #b9b6d3;
+    font-size: 12px;
+}
+
+.terms-color {
+    color: #ff7a7a;
+}
+
+.error {
+    font-size: 12px;
+    color: #ff7a7a;
+}
+
+@media only screen and (max-width: 1000px) {
+    .App {
+        flex-flow: column wrap;
+    }
+
+    .intro-title {
+        width: 100%;
+        height: 50%;
+        padding: 75px 0 40px 0;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .intro-title-h1 {
+        font-size: 24px;
+        font-weight: 700;
+        width: 60%;
+        line-height: 1.5;
+    }
+
+    .intro-subtitle-p {
+        text-align: center;
+        font-weight: 500;
+        width: 90%;
+        padding: 0 20px 50px 20px;
+    }
+
+    .register-box {
+        width: 100%;
+        height: 50%;
+    }
+
+    .intro-subtitle {
+        margin: 0;
+    }
+
+    .trial {
+        width: 90%;
+        height: 100px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding: 0 40px 0 40px;
+    }
+
+    .register-form {
+        width: 90%;
+        height: 460px;
+    }
+
+    .inputs-box {
+        margin-top: 20px;
+        width: 290px;
+        height: 50px;
+    }
+
+    .claim-button {
+        height: 50px;
+    }
+
+    .terms-of-use {
+        color: #b9b6d3;
+        font-size: 12px;
+        text-align: center;
+    }
+}
